@@ -1,0 +1,34 @@
+{
+  "master": {
+    "driver": "mysql",
+    "user": "root",
+    "password": "password"
+  },
+
+  "dev": {
+    "driver": "mysql",
+    "user": "root",
+    "password": "password",
+    "database": "dev",
+    "server" : "localhost",
+    "username": "root",
+    "reconnectTimeout": 2000
+  },
+
+  "test": {
+    "driver": "mysql",
+    "user": "root",
+    "password": "password"
+  },
+
+  "prod": {
+    "driver": "mysql",
+    "user": {
+      "ENV": "PRODUCTION_USERNAME"
+    },
+    "password": {
+      "ENV": "PRODUCTION_PASSWORD"
+    },
+    "database": "dev"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "backend_starter",
+  "main": "server.js",
+  "scripts": {
+    "start": "NODE_ENV=dev node ./server",
+    "prod_migration": "db-migrate up -e prod",
+    "dev_migrate": "db-migrate up -e dev",
+    "create_migration": "db-migrate create",
+    "db_migrate": "db-migrate",
+    "create_database": "db-migrate db:create -e master",
+    "drop_database": "db-migrate db:drop -e master"
+  },
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.13.1",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.3.5",
+    "db-migrate": "^0.10.0-beta.24",
+    "db-migrate-mysql": "^1.1.10",
+    "dotenv": "^4.0.0",
+    "ejs": "^2.3.2",
+    "express": "^4.13.0",
+    "express-session": "^1.11.3",
+    "mailgun": "^0.5.0",
+    "morgan": "^1.6.0",
+    "mysql": "^2.7.0",
+    "mysql-activerecord": "^0.8.6",
+    "nodemailer": "^4.4.0",
+    "passport": "^0.2.2",
+    "passport-local": "^1.0.0"
+  }
+}
